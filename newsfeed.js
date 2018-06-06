@@ -1,4 +1,4 @@
-const newsItem = [
+const newsItems = [
 
     {
         heading: "Stabbing in Baldwin Park",
@@ -34,51 +34,59 @@ const newsItem = [
     }
 ]
 
-const newsFeedFrag = document.createDocumentFragment();
+const buildNewsFeed = (newsItems) => {
 
-const newsArticle = document.createElement("section");
+    const newsFeedFrag = document.createDocumentFragment();
 
-const newsItemHeader = document.createElement("h2");
-newsItemHeader.textContent = newsItem.heading;
+    newsItems.forEach(newsItem => {
 
-const newsHighlightsList = document.createElement("ul");
+        const newsArticle = document.createElement("section");
 
-const newsListItemLikelihood = document.createElement("li");
-const likelihoodLabel = document.createTextNode("Likelihood: ");
-const likelihoodValue = document.createTextNode(newsItem.likelihood);
+        const newsItemHeader = document.createElement("h2");
+        newsItemHeader.textContent = newsItem.heading;
 
-newsListItemLikelihood.appendChild(likelihoodLabel);
-newsListItemLikelihood.appendChild(likelihoodValue);
+        const newsHighlightsList = document.createElement("ul");
 
-const newsListItemDate = document.createElement("li");
-const dateSpan = document.createTextNode("Date: ")
-const dateValue = document.createTextNode(newsItem.date);
+        const newsListItemLikelihood = document.createElement("li");
+        const likelihoodLabel = document.createTextNode("Likelihood: ");
+        const likelihoodValue = document.createTextNode(newsItem.likelihood);
 
-newsListItemDate.appendChild(dateSpan);
-newsListItemDate.appendChild(dateValue);
+        newsListItemLikelihood.appendChild(likelihoodLabel);
+        newsListItemLikelihood.appendChild(likelihoodValue);
 
-const newsListItemLocation = document.createElement("li");
-const whereSpan = document.createTextNode("Where: ");
-const whereValue = document.createTextNode(newsItem.where);
+        const newsListItemDate = document.createElement("li");
+        const dateSpan = document.createTextNode("Date: ")
+        const dateValue = document.createTextNode(newsItem.date);
 
-newsListItemLocation.appendChild(whereSpan);
-newsListItemLocation.appendChild(whereValue);
+        newsListItemDate.appendChild(dateSpan);
+        newsListItemDate.appendChild(dateValue);
 
-newsHighlightsList.appendChild(newsListItemLikelihood);
-newsHighlightsList.appendChild(newsListItemDate);
-newsHighlightsList.appendChild(newsListItemLocation);
+        const newsListItemLocation = document.createElement("li");
+        const whereSpan = document.createTextNode("Where: ");
+        const whereValue = document.createTextNode(newsItem.where);
 
-const synopsisHeader = document.createElement("h3");
-synopsisHeader.textContent = "Synopsis:"
+        newsListItemLocation.appendChild(whereSpan);
+        newsListItemLocation.appendChild(whereValue);
 
-const synopsisParagraph = document.createElement("p");
-synopsisParagraph.textContent = newsItem.synopsis;
+        newsHighlightsList.appendChild(newsListItemLikelihood);
+        newsHighlightsList.appendChild(newsListItemDate);
+        newsHighlightsList.appendChild(newsListItemLocation);
 
-newsArticle.appendChild(newsItemHeader);
-newsArticle.appendChild(newsHighlightsList);
-newsArticle.appendChild(synopsisHeader);
-newsArticle.appendChild(synopsisParagraph);
+        const synopsisHeader = document.createElement("h3");
+        synopsisHeader.textContent = "Synopsis:"
 
-newsFeedFrag.appendChild(newsArticle);
+        const synopsisParagraph = document.createElement("p");
+        synopsisParagraph.textContent = newsItem.synopsis;
 
-console.log(newsFeedFrag);
+        newsArticle.appendChild(newsItemHeader);
+        newsArticle.appendChild(newsHighlightsList);
+        newsArticle.appendChild(synopsisHeader);
+        newsArticle.appendChild(synopsisParagraph);
+
+        newsFeedFrag.appendChild(newsArticle);
+
+    });
+
+    return newsFeedFrag
+
+}
