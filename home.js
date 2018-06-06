@@ -59,5 +59,4 @@ for (let i = 0; i < hometown.length; i++) {
 sect.appendChild(pack)
 homeFrag.appendChild(sect)
 wrap.appendChild(homeFrag)
-console.log(wrap)
 
