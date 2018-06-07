@@ -55,10 +55,10 @@ const newsItems = [
         likelihood: 6,
         date: "4/16/2018",
         where: "Baldwin Park",
-        synopsis: "There was a stabbing in Baldwin Park early friday morning." +
-            "Kyle Shanahan was stabbed thrice in the belly before a local jogger saw the incident" +
+        synopsis: "There was a stabbing in Baldwin Park early friday morning. " +
+            "Kyle Shanahan was stabbed thrice in the belly before a local jogger saw the incident " +
             "and began to scream. The perp fled the scene but is believed at this time to be one Jeffrey Dahmer. " +
-            "Officer Jack Parker was first to the scene. He began to administer first aid until ambulances could arrive." +
+            "Officer Jack Parker was first to the scene. He began to administer first aid until ambulances could arrive. " +
             "The actions of Officer Parker likely saved the life of Kyle."
     }
 
@@ -78,8 +78,8 @@ const newsItems = [
         likelihood: 9,
         date: "1/4/2018",
         where: "Midtown",
-        synopsis: "On the morning of January 14th, Victor Valdez, owner of a local vacuum shop, found that his store had been vandalized by a graffiti artist." +
-            "The words 'These vacuums SUCK!' were found spray-painted across his front display window, along with the tag of the graffiti artist." +
+        synopsis: "On the morning of January 14th, Victor Valdez, owner of a local vacuum shop, found that his store had been vandalized by a graffiti artist. " +
+            "The words 'These vacuums SUCK!' were found spray-painted across his front display window, along with the tag of the graffiti artist. " +
             "The tag matches similar acts of vandalism committed by Jacob Drew, a known alias of Jeffrey Dahmer."
     }
 ]
