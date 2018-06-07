@@ -81,11 +81,11 @@ h4>ul>li {
     text-align:center;
   
  }
-#section-Travel img{
+#section-Travel img {
   width:250px;
   border-radius: 25%;
 }
-#section-Travel ul{
+#section-Travel ul {
   list-style-type: none;
   border: 2px solid black;
   margin-bottom: 15px;
@@ -97,13 +97,13 @@ h4>ul>li {
 
 #sidenav > a:hover {
   color: chartreuse;
-  
-#section-Travel li{
+}  
+#section-Travel li {
   font-size:1.5rem;
-
 }
 
-#section-Travel h1{
+#section-Travel h1 {
   font-size:3.0rem;
   text-shadow: 5px 5px 1px ivory;
   text-align:center;
+}
