@@ -12,8 +12,18 @@ const popUL = (newsItem) => {
                     case "likelihood":
                         //li.appendChild(document.createTextNode("Likelihood: " + newsItem.likelihood))
                         for (let i = 0; i < newsItem.likelihood; i++) {
+                            
                             const icon = document.createElement("i");
                             icon.classList = "fas fa-star";
+                            
+                            if (newsItem.likelihood <= 4) {
+                               icon.style.color = "green";
+                            } else if (newsItem.likelihood <= 7) {
+                                icon.style.color = "orange";
+                            } else {
+                                icon.style.color = "red";
+                            }
+                           
                             li.appendChild(icon);
                         }
 
@@ -22,7 +32,6 @@ const popUL = (newsItem) => {
                             icon.classList = "far fa-star";
                             li.appendChild(icon);
                         }
-
 
                         break;
 
