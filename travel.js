@@ -16,7 +16,6 @@ secID.appendChild(h1Element)
 const onload =(array,h3text,imageName)=>{ //takes two arguments, array and header text
     const ulRef = document.createElement("ul") // create ul to hold li items
     const h3Ref =document.createElement("h3") 
-    h3Ref.id="word"// create tag h3
     const h3Img = document.createElement("IMG");
     h3Img.src = `images/${imageName}`
     travelFrag.appendChild(secID) //append sec to travelfrag
