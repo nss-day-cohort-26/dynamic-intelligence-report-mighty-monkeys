@@ -68,6 +68,7 @@ const crimeSections = () => {
     // Function - creates Crime Committed & Convicted CHILD Containers
     const createCrime = (ob, ob2, ob3) => {
         const crimeContainer = document.createElement("div");
+        crimeContainer.setAttribute("class", "crimeChild");
         const crimeH3 = document.createElement("h3");
         crimeH3.innerHTML = myLists[ob][ob2];
         const crimeUl = document.createElement("ul");
@@ -88,6 +89,7 @@ const crimeSections = () => {
         prisonH4.innerHTML = myLists.headers4[ob];
         const prisonImg = document.createElement("img");
         prisonImg.setAttribute("src", ob2);
+        prisonImg.setAttribute("class", "prisonImg");
         const prisonP = document.createElement("p");
         prisonP.innerHTML = myLists.dates[ob3];
         prisonContainer.appendChild(prisonH4);
@@ -101,6 +103,7 @@ const crimeSections = () => {
         const peopleContainer = document.createElement("div");
         const peopleImg = document.createElement("img");
         peopleImg.setAttribute("src", ob3);
+        peopleImg.setAttribute("class", "peopleImg");
         const peopleH5 = document.createElement("h5");
         peopleH5.innerHTML = myLists[ob][ob2];
         peopleContainer.appendChild(peopleImg);
