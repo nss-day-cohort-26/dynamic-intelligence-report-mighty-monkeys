@@ -3,28 +3,31 @@
   margin: 0;
   padding: 0;
 }
+*:focus {
+  outline: none;
+}
 
 body {
-  background-image: linear-gradient(#EFD780, #FCFDAF 96%);
+  background-image: linear-gradient(#EFD780, #FCFDAF 77%);
   font-family: 'Poor Story', cursive;
   margin-top: 20px;      
 }
 
 h1 {
   font-family: 'Alegreya SC', serif;
-  font-size: 1.5em
+  font-size: 2.01rem;
 }
 h2 {
   font-family: 'Alegreya SC', serif;
-  font-size: 2.23em
+  font-size: 2.01rem;
 }
 h3 {
   font-family: 'Alegreya SC', serif;
-  font-size: 0.82em
+  font-size: 2.01rem;
 }
 h4 {
   font-family: 'Alegreya SC', serif;
-  font-size: 1.75em;
+  font-size: 0.94rem;
 }
 
 div {
@@ -59,4 +62,12 @@ div {
 img {
   display: block;
   margin: 0 auto;
+}
+h4>ul>li {
+  font-family: 'Poor Story', cursive;
+  font-weight: normal;
+}
+
+#sidenav > a:hover {
+  color: chartreuse;
 }
