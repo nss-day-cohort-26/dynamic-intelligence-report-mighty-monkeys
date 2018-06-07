@@ -10,8 +10,22 @@ const popUL = (newsItem) => {
             
                 switch (prop) {
                     case "likelihood":
-                        li.appendChild(document.createTextNode("Likelihood: " + newsItem.likelihood))
+                        //li.appendChild(document.createTextNode("Likelihood: " + newsItem.likelihood))
+                        for (let i = 0; i < newsItem.likelihood; i++) {
+                            const icon = document.createElement("i");
+                            icon.classList = "fas fa-star";
+                            li.appendChild(icon);
+                        }
+
+                        for (let i = 0; i < (10 - newsItem.likelihood); i++) {
+                            const icon = document.createElement("i");
+                            icon.classList = "far fa-star";
+                            li.appendChild(icon);
+                        }
+
+
                         break;
+
                     case "date":
                         li.appendChild(document.createTextNode("Date: " + newsItem.date))
                         break;
