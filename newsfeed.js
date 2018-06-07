@@ -14,6 +14,15 @@ const popUL = (newsItem) => {
                         for (let i = 0; i < newsItem.likelihood; i++) {
                             const icon = document.createElement("i");
                             icon.classList = "fas fa-star";
+                            
+                            if (newsItem.likelihood <= 4) {
+                               icon.style.color = "green";
+                            } else if (newsItem.likelihood <= 7) {
+                                icon.style.color = "yellow";
+                            } else {
+                                icon.style.color = "red";
+                            }
+                            icon.style.color =
                             li.appendChild(icon);
                         }
 
