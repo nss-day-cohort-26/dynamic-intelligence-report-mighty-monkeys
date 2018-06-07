@@ -80,7 +80,8 @@ h4>ul>li {
    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 65%;
+    text-align:center;
   
  }
 #section-Travel img{
@@ -89,15 +90,19 @@ h4>ul>li {
 }
 #section-Travel ul{
   list-style-type: none;
+  border: 2px solid black;
   margin-bottom: 15px;
+  border-radius:25px;
 }
 h4>ul>li {
   font-family: 'Poor Story', cursive;
 }
 #section-Travel li{
   font-size:1.5rem;
+
 }
 #section-Travel h1{
   font-size:3.0rem;
-  text-shadow: 3px 3px 1px ivory;
+  text-shadow: 5px 5px 1px ivory;
+  text-align:center;
 }
