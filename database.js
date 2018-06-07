@@ -86,4 +86,3 @@ const newsItems = [
 
 iconArray = [`<i class="fas fa-home"></i>`, "", `<i class="fas fa-newspaper"></i>`, `<i class="fas fa-money-bill"></i>`, `<i class="fas fa-plane"></i>`];
 
-console.log(iconArray[0]);
