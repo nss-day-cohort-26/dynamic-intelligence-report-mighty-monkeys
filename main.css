@@ -2,6 +2,7 @@
   background-image: linear-gradient(#EFD780, #FCFDAF 96%);
 } */
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -72,10 +73,6 @@ h4>ul>li {
   font-weight: normal;
 }
 
-#sidenav > a:hover {
-  color: chartreuse;
-}
-
 #section-Travel,#section-Travel h1,#section-Travel h3,#section-Travel img,#section-Travel ul{
    display: block;
     margin-left: auto;
@@ -97,12 +94,16 @@ h4>ul>li {
 h4>ul>li {
   font-family: 'Poor Story', cursive;
 }
+
+#sidenav > a:hover {
+  color: chartreuse;
+  
 #section-Travel li{
   font-size:1.5rem;
 
 }
+
 #section-Travel h1{
   font-size:3.0rem;
   text-shadow: 5px 5px 1px ivory;
   text-align:center;
-}

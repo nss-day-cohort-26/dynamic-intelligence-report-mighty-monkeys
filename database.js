@@ -1,3 +1,53 @@
+// Home Database
+
+// Rap-sheet Database
+
+const myLists = {
+    headers1: {
+        header1: "Crimes...",
+        header2: "Prisons Incarcerated",
+        header3: "Witnessess",
+        header4: "Victims",
+        header5: "Rap Sheet"
+    },
+    headers3: {
+        header1: "Committed",
+        header2: "Convicted"
+    },
+    headers4: {
+        header1: "Guantanamo Bay Prison",
+        header2: "Alcatraz Federal Penitentiary",
+        header3: "Riverbend Maximum Security",
+    },
+    dates: {
+        date1: "2002-2005",
+        date2: "2009-2013",
+        date3: "2016-2017",
+    },
+    victims: {
+        victim1: "Chris Traeger",
+        victim2: "Leslie Knope",
+        victim3: "Ann Perkins",
+    },
+    witnessess: {
+        witness1: "Ron Swanson",
+        witness2: "Tom Haverford",
+        witness3: "Gary Gergich",
+    },
+    committedList: {
+        list1: "Hacking Traffic Lights",
+        list2: "Jaywalking",
+        list3: "Cyber Bullying"
+    },
+    convictedList: {
+        list1: "Identity Theft",
+        list2: "Grand Theft Auto",
+        list3: "Battery"
+    }
+}
+
+// New Items Database
+
 const newsItems = [
 
     {
@@ -33,3 +83,6 @@ const newsItems = [
             "The tag matches similar acts of vandalism committed by Jacob Drew, a known alias of Jeffrey Dahmer."
     }
 ]
+
+iconArray = [`<i class="fas fa-home"></i>`, "", `<i class="fas fa-newspaper"></i>`, `<i class="fas fa-money-bill"></i>`, `<i class="fas fa-plane"></i>`];
+
