@@ -31,7 +31,19 @@ div {
   margin: 20px;
   font-size: 1.79em;
 }
-
+ #section-Travel,#section-Travel h1,#section-Travel h3,#section-Travel img,#section-Travel ul{
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
+ }
+ #section-Travel img{
+  width:250px;
+}
+#section-Travel ul{
+  list-style-type: none;
+}
 h4>ul>li {
   font-family: 'Poor Story', cursive;
 }
