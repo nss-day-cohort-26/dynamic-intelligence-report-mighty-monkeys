@@ -1,7 +1,38 @@
+const popUL = (newsItem) => {
+    
+    const ul = document.createElement("ul");
+        
+        for (let prop in newsItem) {
+        
+            if (prop === "likelihood" || prop === "date" || prop === "where") {
+                
+                const li = document.createElement("li");
+            
+                switch (prop) {
+                    case "likelihood":
+                        li.appendChild(document.createTextNode("Likelihood: " + newsItem.likelihood))
+                        break;
+                    case "date":
+                        li.appendChild(document.createTextNode("Date: " + newsItem.date))
+                        break;
+                    case "where":
+                        li.appendChild(document.createTextNode("Where: " + newsItem.where))
+                        break;
+                }
+    
+                ul.appendChild(li);
+            }     
+        }
+    
+    return ul;
+}
+
 
 
 const buildNewsFeed = (newsItems) => {
 
+    const newsFeedSection = document.createElement("section");
+    newsFeedSection.id = "newsFeed";
     const newsFeedFrag = document.createDocumentFragment();
 
     newsItems.forEach(newsItem => {
@@ -11,32 +42,7 @@ const buildNewsFeed = (newsItems) => {
         const newsItemHeader = document.createElement("h2");
         newsItemHeader.textContent = newsItem.heading;
 
-        const newsHighlightsList = document.createElement("ul");
-
-        const newsListItemLikelihood = document.createElement("li");
-        const likelihoodLabel = document.createTextNode("Likelihood: ");
-        const likelihoodValue = document.createTextNode(newsItem.likelihood);
-
-        newsListItemLikelihood.appendChild(likelihoodLabel);
-        newsListItemLikelihood.appendChild(likelihoodValue);
-
-        const newsListItemDate = document.createElement("li");
-        const dateSpan = document.createTextNode("Date: ")
-        const dateValue = document.createTextNode(newsItem.date);
-
-        newsListItemDate.appendChild(dateSpan);
-        newsListItemDate.appendChild(dateValue);
-
-        const newsListItemLocation = document.createElement("li");
-        const whereSpan = document.createTextNode("Where: ");
-        const whereValue = document.createTextNode(newsItem.where);
-
-        newsListItemLocation.appendChild(whereSpan);
-        newsListItemLocation.appendChild(whereValue);
-
-        newsHighlightsList.appendChild(newsListItemLikelihood);
-        newsHighlightsList.appendChild(newsListItemDate);
-        newsHighlightsList.appendChild(newsListItemLocation);
+        const newsHighlightsList = popUL(newsItem);
 
         const synopsisHeader = document.createElement("h3");
         synopsisHeader.textContent = "Synopsis:"
@@ -49,10 +55,14 @@ const buildNewsFeed = (newsItems) => {
         newsArticle.appendChild(synopsisHeader);
         newsArticle.appendChild(synopsisParagraph);
 
-        newsFeedFrag.appendChild(newsArticle);
+        newsFeedSection.appendChild(newsArticle);
 
     });
+
+    newsFeedFrag.appendChild(newsFeedSection);
 
     return newsFeedFrag
 
 }
+
+
