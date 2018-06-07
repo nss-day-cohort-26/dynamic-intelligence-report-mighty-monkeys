@@ -31,3 +31,32 @@ div {
   margin: 20px;
   font-size: 1.79em;
 }
+
+/* navbar css */
+
+#sidenav {
+  height: 18rem;
+  width: 10rem;
+  position: fixed;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(#EFD780, #FCFDAF 96%);
+  border-radius: 20px;
+}
+
+#sidenav > a {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
