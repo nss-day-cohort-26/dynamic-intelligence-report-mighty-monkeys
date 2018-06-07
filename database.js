@@ -2,7 +2,7 @@ const newsItems = [
 
     {
         heading: "Stabbing in Baldwin Park",
-        likelihood: 9,
+        likelihood: 6,
         date: "4/16/2018",
         where: "Baldwin Park",
         synopsis: "There was a stabbing in Baldwin Park early friday morning." +
@@ -14,7 +14,7 @@ const newsItems = [
 
     , {
         heading: "Theft at Thirsties Drugstore",
-        likelihood: 7,
+        likelihood: 4,
         date: "3/13/2018",
         where: "East Ridge",
         synopsis: "A local Thirsties Drugstore was robbed on March 13. The perpetrator entered the store, " +
@@ -25,7 +25,7 @@ const newsItems = [
 
     , {
         heading: "Vandelism at Victor's Vacuum Shop",
-        likelihood: 5,
+        likelihood: 9,
         date: "1/4/2018",
         where: "Midtown",
         synopsis: "On the morning of January 14th, Victor Valdez, owner of a local vacuum shop, found that his store had been vandalized by a graffiti artist." +
