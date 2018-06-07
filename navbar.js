@@ -8,6 +8,7 @@ const aRefFinance = document.createElement("a");
 const aRefTravel = document.createElement("a");
 divRef.id = "sidenav"
 aRefHome.id = "HomeNav"
+aRefHome.className = "fas fa-home"
 aRefRapSheet.id = "rap-sheetNav"
 aRefNewsFeed.id = "newsFeedNav"
 aRefFinance.id = "financeNav"

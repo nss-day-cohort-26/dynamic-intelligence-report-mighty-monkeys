@@ -2,53 +2,6 @@ const rapSheetFrag = document.createDocumentFragment();
 const sectionRapSheet = document.createElement("section");
 sectionRapSheet.setAttribute("id", "rap-sheet");
 
-// let img = document.createElement("img");
-// img.setAttribute("src", "img_pulpit.jpg");
-// img.setAttribute("alt", "NameofImage");
-
-const myLists = {
-    headers1: {
-        header1: "Crimes...",
-        header2: "Prisons Incarcerated",
-        header3: "Witnessess",
-        header4: "Victims",
-    },
-    headers3: {
-        header1: "Committed",
-        header2: "Convicted"
-    },
-    headers4: {
-        header1: "Guantanamo Bay Prison",
-        header2: "Alcatraz Federal Penitentiary",
-        header3: "Riverbend Maximum Security",
-    },
-    dates: {
-        date1: "2002-2005",
-        date2: "2009-2013",
-        date3: "2016-2017",
-    },
-    victims: {
-        victim1: "Chris Traeger",
-        victim2: "Leslie Knope",
-        victim3: "Ann Perkins",
-    },
-    witnessess: {
-        witness1: "Ron Swanson",
-        witness2: "Tom Haverford",
-        witness3: "Gary Gergich",
-    },
-    committedList: {
-        list1: "Hacking Traffic Lights",
-        list2: "Jaywalking",
-        list3: "Cyber Bullying"
-    },
-    convictedList: {
-        list1: "Identity Theft",
-        list2: "Grand Theft Auto",
-        list3: "Battery"
-    }
-}
-
 const crimeSections = () => {
 
     // Function - creates Headers for each CHILD Container
@@ -75,6 +28,7 @@ const crimeSections = () => {
         for (let i in myLists[ob3]) {
             const crimeLi = document.createElement("li");
             crimeLi.innerHTML = myLists[ob3][i];
+            crimeLi.setAttribute("class", "crimeLi");
             crimeUl.appendChild(crimeLi);
         }
         crimeContainer.appendChild(crimeH3);
@@ -113,6 +67,11 @@ const crimeSections = () => {
         peopleContainer.appendChild(peopleH5);
         return peopleContainer;
     }
+
+    // Section Header
+
+    const sectionHeading = createContainerHeader("header5");
+    sectionHeading.id = "gary";
 
     // Crime Container ---------->
 
@@ -171,6 +130,7 @@ const crimeSections = () => {
 
     // Append to Section Element 
 
+    sectionRapSheet.appendChild(sectionHeading);
     sectionRapSheet.appendChild(crimesH1);
     sectionRapSheet.appendChild(crimeParent);
     sectionRapSheet.appendChild(prisonH1);

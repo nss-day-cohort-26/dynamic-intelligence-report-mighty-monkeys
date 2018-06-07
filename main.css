@@ -2,6 +2,11 @@
   background-image: linear-gradient(#EFD780, #FCFDAF 96%);
 } */
 
+@font-face {
+font-family: "fontAwesome";
+src: url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -72,10 +77,6 @@ h4>ul>li {
   font-weight: normal;
 }
 
-#sidenav > a:hover {
-  color: chartreuse;
-}
-
 #section-Travel,#section-Travel h1,#section-Travel h3,#section-Travel img,#section-Travel ul{
    display: block;
     margin-left: auto;
@@ -91,4 +92,9 @@ h4>ul>li {
 }
 h4>ul>li {
   font-family: 'Poor Story', cursive;
+}
+
+#sidenav > a:hover {
+  color: chartreuse;
+  font-family: "fontAwesome";
 }
