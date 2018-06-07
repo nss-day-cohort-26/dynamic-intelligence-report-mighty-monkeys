@@ -1,5 +1,4 @@
 const homeFrag = document.createDocumentFragment()
-
 const wrap = document.getElementById('wrapper')
 const sect  = document.createElement('section')
 sect.id = "Home"
@@ -16,6 +15,7 @@ const pack = document.createElement('ul')
 
 const names = ['Bill Myes', 'Jack Bird', 'Steve Gill'] 
 
+names.id='bit'
 const head = document.createElement('h2')
 head.textContent= 'Associates'
 box.appendChild(head)
