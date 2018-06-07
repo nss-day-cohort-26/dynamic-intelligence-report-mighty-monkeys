@@ -1,13 +1,14 @@
 const homeFrag = document.createDocumentFragment()
 
 const wrap = document.getElementById('wrapper')
-const sect = document.createElement('section')
+const sect  = document.createElement('section')
 sect.id = "Home"
 const img = document.createElement("img")
-img.src = "jailpic.jpg";
+img.src = "jailpic.jpg"
+img.style.width = '1100px'
+img.style.height = '800px'
 const sects = document.getElementById("wrapper")
 
- 
 sect.appendChild(img)
 const box = document.createElement('ul')
 const sack = document.createElement('ul')
