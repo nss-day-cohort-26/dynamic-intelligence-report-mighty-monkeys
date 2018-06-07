@@ -4,14 +4,22 @@ const sect  = document.createElement('section')
 sect.id = "Home"
 const img = document.createElement("img")
 img.src = "jailpic.jpg"
-img.style.width = '1100px'
-img.style.height = '800px'
+img.style.width = '1000px'
+img.style.heght = '1100px'
+img.style.borderRadius = '10%'
 const sects = document.getElementById("wrapper")
 
+
 sect.appendChild(img)
+const parentDiv = document.createElement('div')
 const box = document.createElement('ul')
 const sack = document.createElement('ul')
 const pack = document.createElement('ul')
+parentDiv.appendChild(box)
+parentDiv.appendChild(sack)
+parentDiv.appendChild(pack)
+console.log(parentDiv)
+parentDiv.id ="tripod"
 
 const names = ['Bill Myes', 'Jack Bird', 'Steve Gill'] 
 
@@ -27,7 +35,7 @@ for (let i = 0; i < names.length; i++) {
   box.appendChild(li)
 }
 
-sect.appendChild(box)
+// sect.appendChild(box)
 
 const aliases = ['Joe Black', 'Mickey', 'Lee Jones'] 
 
@@ -42,9 +50,9 @@ for (let i = 0; i < aliases.length; i++) {
   sack.appendChild(li)
 }
 
-sect.appendChild(sack)
+// sect.appendChild(sack)
 
-const hometown = ['Nashville, TN']
+const hometown = ['Nashville, TN','Somewhere Else', 'Nowhere Else']
 
 const headerThree = document.createElement('h2')
 headerThree.textContent= 'Hometown'
@@ -57,7 +65,8 @@ for (let i = 0; i < hometown.length; i++) {
   pack.appendChild(li)
 }
 
-sect.appendChild(pack)
+// parentDiv.appendChild(pack)
 homeFrag.appendChild(sect)
 wrap.appendChild(homeFrag)
+sect.appendChild(parentDiv)
 
