@@ -1,0 +1,21 @@
+#Home {
+  text-align: center;
+  height: 800px;
+
+}
+
+#tripod {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
+}
+
+#tripod ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
