@@ -73,6 +73,13 @@ h4>ul>li {
   font-weight: normal;
 }
 
+<<<<<<< HEAD
+=======
+#sidenav > a:hover {
+  color: chartreuse;
+}
+
+>>>>>>> parent of d057484... added styling to finance
 #section-Travel,#section-Travel h1,#section-Travel h3,#section-Travel img,#section-Travel ul{
    display: block;
     margin-left: auto;

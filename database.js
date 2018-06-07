@@ -82,7 +82,11 @@ const newsItems = [
             "The words 'These vacuums SUCK!' were found spray-painted across his front display window, along with the tag of the graffiti artist. " +
             "The tag matches similar acts of vandalism committed by Jacob Drew, a known alias of Jeffrey Dahmer."
     }
+<<<<<<< HEAD
 ]
 
 iconArray = [`<i class="fas fa-home"></i>`, "", `<i class="fas fa-newspaper"></i>`, `<i class="fas fa-money-bill"></i>`, `<i class="fas fa-plane"></i>`];
 
+=======
+]
+>>>>>>> parent of d057484... added styling to finance
