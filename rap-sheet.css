@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+}
+
+#crimeParent {
+    margin: 0 50px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.crimeChild {
+    padding: 25px 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#prisonParent {
+    margin: 0 50px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.prisonH4 {
+    text-align: center;
+}
+
+.prisonImg {
+    width: 320px;
+    border-radius: 25%;
+}
+
+.prisonP {
+    text-align: center;
+}
+
+#witnessParent {
+    margin: 0 50px;
+    padding: 50px 0;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#victimParent {
+    margin: 0 50px;
+    padding: 50px 0;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.peopleImg {
+    width: 225px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.peopleH5 {
+    text-align: center;
+}
