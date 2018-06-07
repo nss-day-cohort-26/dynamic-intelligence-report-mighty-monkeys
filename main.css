@@ -77,13 +77,14 @@ h4>ul>li {
    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    width: 400px;
     text-align:center;
   
  }
 #section-Travel img {
   width:250px;
   border-radius: 25%;
+  margin-bottom: 15px;
 }
 #section-Travel ul {
   list-style-type: none;
