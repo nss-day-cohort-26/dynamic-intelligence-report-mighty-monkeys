@@ -12,7 +12,6 @@ let travelFrag = document.createDocumentFragment()
 const onload =(array,h3text,imageName)=>{ //takes two arguments, array and header text
     const ulRef = document.createElement("ul") // create ul to hold li items
     const h3Ref =document.createElement("h3") 
-    h3Ref.id="word"// create tag h3
     const h3Img = document.createElement("IMG");
     h3Img.src = `images/${imageName}`
     artRef.appendChild(secID) //artRef is html class wrapper and add my new section Id
