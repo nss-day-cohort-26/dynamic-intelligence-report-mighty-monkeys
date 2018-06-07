@@ -31,8 +31,5 @@ const onload =(array,h3text,imageName)=>{ //takes two arguments, array and heade
     }
 };
 
-//function calls
-const airportUL = onload(airports,"Airports","BNA.jpg" );
-const busStationsUL = onload(busStations, "Bus Stations","busker.jpeg");
-const locationsUL = onload(locations,"Active Locations","Location.png");
-const rentalsUL = onload(rentals, "Rentals","stand.jpg");
+//function calls in DOMController.js
+
