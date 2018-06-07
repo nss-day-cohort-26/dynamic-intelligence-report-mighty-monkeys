@@ -87,10 +87,12 @@ const crimeSections = () => {
         const prisonContainer = document.createElement("div");
         const prisonH4 = document.createElement("h4");
         prisonH4.innerHTML = myLists.headers4[ob];
+        prisonH4.setAttribute("class", "prisonH4");
         const prisonImg = document.createElement("img");
         prisonImg.setAttribute("src", ob2);
         prisonImg.setAttribute("class", "prisonImg");
         const prisonP = document.createElement("p");
+        prisonP.setAttribute("class", "prisonP");
         prisonP.innerHTML = myLists.dates[ob3];
         prisonContainer.appendChild(prisonH4);
         prisonContainer.appendChild(prisonImg);
@@ -106,6 +108,7 @@ const crimeSections = () => {
         peopleImg.setAttribute("class", "peopleImg");
         const peopleH5 = document.createElement("h5");
         peopleH5.innerHTML = myLists[ob][ob2];
+        peopleH5.setAttribute("class", "peopleH5");
         peopleContainer.appendChild(peopleImg);
         peopleContainer.appendChild(peopleH5);
         return peopleContainer;
