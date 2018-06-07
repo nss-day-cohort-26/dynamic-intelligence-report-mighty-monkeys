@@ -1,9 +1,6 @@
 // variables
 const artRef = document.querySelector("#wrapper")
-const airports = ["BNA - Nashville,TN","Istanbul Ataturk Airport","Airport in Switzerland","Kuala Lumpur Airport in Malaysia"]
-const busStations = ["Bus Station at Spaarne Hospital","Arriva Headquarters Guimarães","Slough Bus Station","Grand Central Terminal"]
-const locations = ["Dickson,TN","Kiev,Ukraine","Havana,Cuba","Caracas,Venezuela"]
-const rentals = ["Art Pancake Party and Wedding Rental","AirBnB","Nashville Armory"]
+
 const secID = document.createElement("section")
 secID.setAttribute("id","section-Travel")
 let travelFrag = document.createDocumentFragment()
@@ -31,7 +28,7 @@ const onload =(array,h3text,imageName)=>{ //takes two arguments, array and heade
         liRef.appendChild(textNode) //append array value to li
         ulRef.appendChild(liRef) //append to ul
         secID.appendChild(ulRef)//append to artID
-        console.log(array[i]) //personal test
+        
     }
 };
 
