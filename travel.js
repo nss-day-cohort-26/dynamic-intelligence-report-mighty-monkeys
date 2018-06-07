@@ -7,11 +7,15 @@ const rentals = ["Art Pancake Party and Wedding Rental","AirBnB","Nashville Armo
 const secID = document.createElement("section")
 secID.setAttribute("id","section-Travel")
 let travelFrag = document.createDocumentFragment()
+const h1Element = document.createElement("h1")
+const h1Text =document.createTextNode("Travel Report")
+h1Element.appendChild(h1Text)
+secID.appendChild(h1Element)
 
 //functions
 const onload =(array,h3text,imageName)=>{ //takes two arguments, array and header text
     const ulRef = document.createElement("ul") // create ul to hold li items
-    const h3Ref =document.createElement("h3") // create tag h3
+    const h3Ref =document.createElement("h3") 
     const h3Img = document.createElement("IMG");
     h3Img.src = `images/${imageName}`
     travelFrag.appendChild(secID) //append sec to travelfrag
