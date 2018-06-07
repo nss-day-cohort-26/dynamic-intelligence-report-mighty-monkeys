@@ -29,3 +29,4 @@ divRef.appendChild(aRefNewsFeed);
 divRef.appendChild(aRefFinance);
 divRef.appendChild(aRefTravel);
 navbarFrag.appendChild(divRef);
+
