@@ -14,8 +14,8 @@ const onload =(array,h3text,imageName)=>{ //takes two arguments, array and heade
     const h3Ref =document.createElement("h3") // create tag h3
     const h3Img = document.createElement("IMG");
     h3Img.src = `images/${imageName}`
-    artRef.appendChild(secID) //artRef is html class wrapper and add my new section Id
-    artRef.appendChild(travelFrag)
+    travelFrag.appendChild(secID) //append sec to travelfrag
+    artRef.appendChild(travelFrag) //append travelFrag to artRef
     newH3 = document.createTextNode(h3text); //add argument to text node
     h3Ref.appendChild(newH3) //append h3 content to h3
     secID.appendChild(h3Ref) //append h3 to section
@@ -31,8 +31,5 @@ const onload =(array,h3text,imageName)=>{ //takes two arguments, array and heade
     }
 };
 
-//function calls
-const airportUL = onload(airports,"Airports","BNA.jpg" );
-const busStationsUL = onload(busStations, "Bus Stations","busker.jpeg");
-const locationsUL = onload(locations,"Active Locations","Location.png");
-const rentalsUL = onload(rentals, "Rentals","stand.jpg");
+//function calls in DOMController.js
+
