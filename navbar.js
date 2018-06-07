@@ -6,7 +6,13 @@ const aRefRapSheet = document.createElement("a");
 const aRefNewsFeed = document.createElement("a");
 const aRefFinance = document.createElement("a");
 const aRefTravel = document.createElement("a");
-aRefHome.href = "#home"
+divRef.id = "sidenav"
+aRefHome.id = "HomeNav"
+aRefRapSheet.id = "rap-sheetNav"
+aRefNewsFeed.id = "newsFeedNav"
+aRefFinance.id = "financeNav"
+aRefTravel.id = "section-TravelNav"
+aRefHome.href = "#Home"
 aRefRapSheet.href = "#rap-sheet"
 aRefNewsFeed.href = "#newsFeed"
 aRefFinance.href = "#finance"
@@ -23,19 +29,3 @@ divRef.appendChild(aRefNewsFeed);
 divRef.appendChild(aRefFinance);
 divRef.appendChild(aRefTravel);
 navbarFrag.appendChild(divRef);
-
-{/* <div class="sidenav">
-<a href="#executive">Suspect</a>
-<a href="#rap">Rap Sheet</a>
-<a href="#news">News</a>
-<a href="#finance">Finance</a>
-<a href="#travel">Travel</a>
-</div> */}
-
-
-
-
-
-
-//write navbar outside of article tag
-
