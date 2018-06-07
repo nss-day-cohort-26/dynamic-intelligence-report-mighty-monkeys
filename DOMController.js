@@ -9,3 +9,11 @@ fragment.appendChild(buildNewsFeed(newsItems));
 fragment.appendChild(financeFrag);
 fragment.appendChild(travelFrag);
 wrapper.appendChild(fragment);
+ 
+// travel function calls
+
+
+onload(airports,"Airports","BNA.jpg" );
+onload(busStations, "Bus Stations","busker.jpeg");
+onload(locations,"Active Locations","Location.png");
+onload(rentals, "Rentals","stand.jpg");
