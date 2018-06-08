@@ -2,6 +2,10 @@ const homeFrag = document.createDocumentFragment()
 const wrap = document.getElementById('wrapper')
 const sect  = document.createElement('section')
 sect.id = "Home"
+const header = document.createElement('h1')
+header.id = 'head'
+header.textContent = 'Mighty Monkeys'
+sect.appendChild(header)
 const img = document.createElement("img")
 img.src = "jailpic.jpg"
 img.style.width = '1000px'
@@ -65,7 +69,6 @@ for (let i = 0; i < hometown.length; i++) {
   pack.appendChild(li)
 }
 
-// parentDiv.appendChild(pack)
 homeFrag.appendChild(sect)
 wrap.appendChild(homeFrag)
 sect.appendChild(parentDiv)

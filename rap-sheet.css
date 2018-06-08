@@ -4,9 +4,10 @@ h1 {
 
 #gary {
     padding: 40px 0;
-    font-size: 120px;
+    font-size: 100px;
     font-style: italic;
     text-decoration: underline;
+    text-shadow: 2px 2px white;
 }
 
 #crimeParent {
