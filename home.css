@@ -1,6 +1,13 @@
+#head {
+  font-size: 700%;
+  padding-bottom: 88px;
+  text-decoration: underline;
+}
+
 #Home {
   text-align: center;
   height: 800px;
+  margin-bottom: 199px;
 
 }
 
