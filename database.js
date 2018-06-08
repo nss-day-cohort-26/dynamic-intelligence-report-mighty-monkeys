@@ -84,6 +84,38 @@ const newsItems = [
     }
 ]
 
+//Finance
+const financeObject = {
+    bankAccounts:{
+        ul:[
+            "Has an offshore account located somewhere in the Cayman Islands. Exact location is unknown.",
+            "Has a Swiss bank account at Credit Suisse located in Zurich, Switzerland",
+            "Has business account set up with the name of Very Good Business LLC. Seems suspicious. Possibly fake."
+        ]
+    },//<h4>Bank Accounts</h4><ul><li*3>
+    businesses:{
+        ul:[
+            "Owner of Very Good Business LLC",
+            "Self-employed at Fiverr",
+            "Does odd jobs on Craigslist",
+            "Is business partner with Creeper Man With The Van"
+        ]
+    },//<h4>Businesses</h4><ul><li*4>
+    blackmailedIndividuals:{
+        ul:[
+            "Madona",
+            "Michael Jackson",
+            "Coolio"
+        ]
+    },//<h4>Blackmailed Individuals</h4><ul><li*3>
+    moneyLaunderingMethods:{
+        ul:[
+            "Craigslist",
+            "Bitcoin"
+        ]
+    }//<h4>Money Laundering Methods</h4><ul><li*2>
+}
+let headerFourArray = ["Bank Accounts","Businesses","Blackmailed Individuals","Money Laundering Methods"]
 iconArray = [`<i class="fas fa-home"></i>`, "", `<i class="fas fa-newspaper"></i>`, `<i class="fas fa-money-bill"></i>`, `<i class="fas fa-plane"></i>`];
 
 const airports = ["BNA - Nashville,TN","Istanbul Ataturk Airport","Airport in Switzerland","Kuala Lumpur Airport in Malaysia"]
