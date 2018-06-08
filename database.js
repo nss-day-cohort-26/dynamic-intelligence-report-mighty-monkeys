@@ -82,11 +82,37 @@ const newsItems = [
             "The words 'These vacuums SUCK!' were found spray-painted across his front display window, along with the tag of the graffiti artist. " +
             "The tag matches similar acts of vandalism committed by Jacob Drew, a known alias of Jeffrey Dahmer."
     }
-<<<<<<< HEAD
 ]
 
-iconArray = [`<i class="fas fa-home"></i>`, "", `<i class="fas fa-newspaper"></i>`, `<i class="fas fa-money-bill"></i>`, `<i class="fas fa-plane"></i>`];
-
-=======
-]
->>>>>>> parent of d057484... added styling to finance
+//Finance
+const financeObject = {
+    bankAccounts:{
+        ul:[
+            "Has an offshore account located somewhere in the Cayman Islands. Exact location is unknown.",
+            "Has a Swiss bank account at Credit Suisse located in Zurich, Switzerland",
+            "Has business account set up with the name of Very Good Business LLC. Seems suspicious. Possibly fake."
+        ]
+    },//<h4>Bank Accounts</h4><ul><li*3>
+    businesses:{
+        ul:[
+            "Owner of Very Good Business LLC",
+            "Self-employed at Fiverr",
+            "Does odd jobs on Craigslist",
+            "Is business partner with Creeper Man With The Van"
+        ]
+    },//<h4>Businesses</h4><ul><li*4>
+    blackmailedIndividuals:{
+        ul:[
+            "Madona",
+            "Michael Jackson",
+            "Coolio"
+        ]
+    },//<h4>Blackmailed Individuals</h4><ul><li*3>
+    moneyLaunderingMethods:{
+        ul:[
+            "Craigslist",
+            "Bitcoin"
+        ]
+    }//<h4>Money Laundering Methods</h4><ul><li*2>
+}
+let headerFourArray = ["Bank Accounts","Businesses","Blackmailed Individuals","Money Laundering Methods"]

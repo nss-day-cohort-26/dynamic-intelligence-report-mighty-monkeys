@@ -1,0 +1,21 @@
+#finance>h1 {
+    font-size: 3rem;
+}
+
+#finance>h4 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#finance>h4>ul {
+    width: 32rem;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+#finance>h4>ul>li {
+    font-size: 1.5rem;
+}
