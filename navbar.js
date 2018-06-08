@@ -7,11 +7,21 @@ const aRefNewsFeed = document.createElement("a");
 const aRefFinance = document.createElement("a");
 const aRefTravel = document.createElement("a");
 divRef.id = "sidenav"
+
 aRefHome.id = "HomeNav"
+aRefHome.setAttribute("class", "fas fa-home");
+
 aRefRapSheet.id = "rap-sheetNav"
+aRefRapSheet.setAttribute("class", "fas fa-lock")
+
 aRefNewsFeed.id = "newsFeedNav"
+aRefNewsFeed.setAttribute("class", "fas fa-newspaper");
 aRefFinance.id = "financeNav"
+aRefFinance.setAttribute("class", "fas fa-money-bill")
+
 aRefTravel.id = "section-TravelNav"
+aRefTravel.setAttribute("class", "fas fa-plane");
+
 aRefHome.href = "#Home"
 aRefRapSheet.href = "#rap-sheet"
 aRefNewsFeed.href = "#newsFeed"
